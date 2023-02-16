@@ -1,0 +1,14 @@
+ul.nav li {
+    padding-right:10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div.container {
+    position: relative;
+    margin-bottom: 25px;
+}

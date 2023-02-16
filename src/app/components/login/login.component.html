@@ -1,0 +1,26 @@
+<form novalidate [formGroup] = "loginForm" (ngSubmit)="handleSubmit()">
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input placeholder="username" id="username" formControlName="username" name="username" type="text" class="form-control" />
+        <pre>
+            {{ loginForm.controls['username'].touched | json }}
+        </pre>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input id="password" formControlName="password" type="password" class="form-control" />
+        <div>
+
+        </div>
+    </div>
+    <div class="mb-3">
+        <input type="checkbox" class="form-check-input">
+        <label for="" class="form-check-label">Remember me</label>
+    </div>
+    <button class="btn btn-primary btn-block">Submit</button>
+    <pre>
+        {{loginForm.value | json}}
+    </pre>
+</form>
+
