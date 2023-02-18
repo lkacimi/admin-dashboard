@@ -48,7 +48,7 @@ export class AppComponent {
 
   shouldIBeDisplayed() {
   
-    if(this.router.url.endsWith('login')) {
+    if(this.router.url.endsWith('login') || this.router.url.endsWith('register')) {
       return false;
     }
     return true;

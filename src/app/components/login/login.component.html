@@ -1,10 +1,13 @@
 <form novalidate [formGroup] = "loginForm" (ngSubmit)="handleSubmit()">
 
+    <p style="text-align: center; margin-bottom: 25px; font-weight: bolder;">
+        Login
+    </p>
     <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input placeholder="username" id="username" formControlName="username" name="username" type="text" class="form-control" />
+        <label for="email" class="form-label">Email</label>
+        <input placeholder="Email" id="email" formControlName="email" name="username" type="email" class="form-control" />
         <pre>
-            {{ loginForm.controls['username'].touched | json }}
+            {{ loginForm.controls['email'].touched | json }}
         </pre>
     </div>
     <div class="mb-3">
@@ -18,9 +21,11 @@
         <input type="checkbox" class="form-check-input">
         <label for="" class="form-check-label">Remember me</label>
     </div>
-    <button class="btn btn-primary btn-block">Submit</button>
-    <pre>
-        {{loginForm.value | json}}
-    </pre>
+    <button class="btn btn-primary btn-block">Sign In</button>
+
+    <br style="clear:both" />
+    <span>
+        Don't have an account? &nbsp; <a [routerLink]="'/register'">Create Account</a>
+    </span>
 </form>
 

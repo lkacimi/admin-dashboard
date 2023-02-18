@@ -1,0 +1,44 @@
+<form novalidate #v="ngForm">
+    <p style="text-align: center; margin-bottom: 25px; font-weight: bolder;">
+        Register
+    </p>
+
+    <div>
+        <label for="name" class="form-label">Name</label>
+        <input id="name" type="text" class="form-control" required minlength="7" 
+        name="name"
+        #name="ngModel"
+        [(ngModel)] = "user.name">
+        <div class="alert alert-danger" *ngIf="!v.controls['name'].valid">
+            <!--v.controls['name'].errors['required']-->
+            <!--v.controls['name'].errors['minlength']-->
+            <span *ngIf="name.errors !=null && name.errors['required']"> Name is required</span>
+            <br />
+            <span *ngIf="name.errors !=null && name.errors['minlength']"> Name must have 7 characters</span>
+        </div>
+    </div>
+    <div>
+        <label for="email" class="form-label">Email</label>
+        <input id="email" type="email" class="form-control" required 
+        name="email"
+        [(ngModel)] = "user.email">
+        <!--TODO: Show validation on screen-->
+    </div>
+    <div>
+        <label for="password" class="form-label">Password</label>
+        <input id="password" type="password" class="form-control" name="password" 
+        [(ngModel)]="user.password"
+        ngModel>
+         <!--TODO: Show validation on screen-->
+    </div>
+    <br />
+    <button class="btn btn-primary btn-block">Sign Up</button>
+    <br />
+    <span>
+        Already have an account? <a [routerLink]="'/login'">Sign In</a>
+    </span>
+    <pre>
+        {{ v.value | json }}
+    </pre>
+</form>
+
