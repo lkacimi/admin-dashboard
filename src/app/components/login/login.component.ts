@@ -22,9 +22,6 @@ export class LoginComponent implements OnInit{
     password: new FormControl("", [ Validators.required, Validators.minLength(6)])
   });
 
-
-
-
   handleSubmit() {
     if (this.loginForm.valid) {
       //Make a call to the backend to check whether the combination is valid
@@ -34,6 +31,4 @@ export class LoginComponent implements OnInit{
     } 
    
   }
-
-  
 }

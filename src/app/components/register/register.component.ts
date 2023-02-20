@@ -11,4 +11,7 @@ class User{
 })
 export class RegisterComponent {
   user:User = new User("", "", ""); 
+  name:any = undefined;
+
+
 }

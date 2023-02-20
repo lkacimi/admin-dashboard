@@ -6,6 +6,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { PaymentsComponent } from './components/payments/payments.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ShipmentsComponent } from './components/shipments/shipments.component';
 import { UsersComponent } from './components/users/users.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'payments', component: PaymentsComponent},
   {path:'login', component:LoginComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'profile', component: ProfileComponent},
   {path:'**', component: NotFoundComponent}
 ];
 

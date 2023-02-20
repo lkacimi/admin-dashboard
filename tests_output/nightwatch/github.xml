@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="nightwatch.github"
+    errors="1" failures="0" hostname="" id="" package="github" skipped="3"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new ChromeDriver session: [SessionNotCreatedError] session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 109.0.5414.119 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;/Volumes/Workplace/SimpliLearn/admin-dashboard/node_modules/chromedriver/lib/chromedriver/chromedriver&#39;,
+     port: undefined,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: {}
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+ An error occurred while creating a new ChromeDriver session: [SessionNotCreatedError] session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 109.0.5414.119 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;/Volumes/Workplace/SimpliLearn/admin-dashboard/node_modules/chromedriver/lib/chromedriver/chromedriver&#39;,
+     port: undefined,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: {}
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+    </system-err>
+  
+
+    
+    <error message=""><![CDATA[
+      
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Github Title test" classname="nightwatch.github">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Github search for nightwatch repository" classname="nightwatch.github">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Github login with fake credentials" classname="nightwatch.github">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="nightwatch.google"
+    errors="0" failures="0" hostname="" id="" package="google" skipped="0"
+    tests="2" time="2.662" timestamp="">
+  
+    <testcase name="Google title test" classname="nightwatch.google" time="1.172" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Google search test" classname="nightwatch.google" time="1.490" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -46,12 +46,15 @@ export class AppComponent {
 
   constructor(private router: Router) {}
 
-  shouldIBeDisplayed() {
-  
+  public shouldIBeDisplayed():boolean {
+    console.log("Router URL: ", this.router.url)
     if(this.router.url.endsWith('login') || this.router.url.endsWith('register')) {
       return false;
     }
     return true;
   }
+
+
+
 
 }
