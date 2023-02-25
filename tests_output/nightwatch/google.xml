@@ -10,7 +10,26 @@
 
   
     <system-err>
-       An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
+       An error occurred while creating a new ChromeDriver session: [WebDriverError] disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: headless chrome=110.0.5481.177)
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;/Users/kacimi/Downloads/chromedriver_mac64 2/chromedriver&#39;,
+     port: undefined,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: {}
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+ An error occurred while creating a new ChromeDriver session: [WebDriverError] disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: headless chrome=110.0.5481.177)
   Verify if ChromeDriver is configured correctly; using:
   {
      start_process: true,

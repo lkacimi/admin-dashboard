@@ -23,10 +23,12 @@ export class LoginComponent implements OnInit{
   });
 
   handleSubmit() {
-    if (this.loginForm.valid) {
+    
+    
+    if (this.loginForm.valid && this.loginForm.controls['email'].value == 'nobody@gmail.com') {
       //Make a call to the backend to check whether the combination is valid
       console.log(this.loginForm.value);
-      sessionStorage.setItem("token", "token");
+      //sessionStorage.setItem("token", "token");
       this.router.navigate([""]);
     } 
    

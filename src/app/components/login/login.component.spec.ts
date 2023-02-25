@@ -15,7 +15,6 @@ describe('LoginComponent', () => {
         FormsModule,
         ReactiveFormsModule,
         RouterTestingModule,
-       
       ],
     })
     .compileComponents();
@@ -25,7 +24,17 @@ describe('LoginComponent', () => {
     fixture.detectChanges();
   });
 
+  //afterEach
+
+  //beforeAll
+  //afterAll
+  //Unit test
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //Unit test 2
+  it("Description", () => {
+
+  })
 });

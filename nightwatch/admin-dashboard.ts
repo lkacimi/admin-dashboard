@@ -1,8 +1,7 @@
 import {NightwatchTests} from 'nightwatch';
 const home: NightwatchTests = {
     'Title test': () => {
-     //TODO: Why localhost cannot be loaded by the chrome driver (data; shown in the address box)
-      browser.url('http://localhost:62200/login').assert.titleEquals('AdminDashboard');
+      browser.url('http://localhost:4200').assert.titleEquals('AdminDashboard');
     },
   
     'DOM test': () => {
@@ -10,3 +9,5 @@ const home: NightwatchTests = {
         .assert.textContains('.navbar', 'Orders');
     }
   };
+
+  export default home;

@@ -14,17 +14,24 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['test','nightwatch'], 
+  src_folders: ['./features/step-definitions'], 
   webdriver: {},
 
   test_workers: {
     enabled: true
   },
 
+  test_runner: {
+    type: 'cucumber',
+    options: {
+      feature_path: './features/*.feature'
+    }
+  },
+
   test_settings: {
     default: {
-      disable_error_log: false,
-      launch_url: 'http://localhost',
+      disable_error_log: true,
+      launch_url: 'http://localhost:4200',
 
       screenshots: {
         enabled: false,
@@ -33,13 +40,25 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "IgnoreSslErrors": true,
+        "chromeOptions" : {
+          "args" : [
+            "no-sandbox",
+            "disable-gpu",
+            "ignore-certificate-errors"
+          ]
+        },
       },
       
       webdriver: {
         start_process: true,
         port: 4444,
-        server_path: '/Users/kacimi/Downloads/chromedriver_mac64\ 2/chromedriver'
+        server_path: '/Users/kacimi/Downloads/chromedriver_mac64\ \(1\)/chromedriver'
       },
       
     },
